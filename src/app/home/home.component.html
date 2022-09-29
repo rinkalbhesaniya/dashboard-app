@@ -1,0 +1,164 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened class="sidebar">
+    <div class="dashboard">
+      <div class="logo"><img src="assets/logo.svg" alt="img not found" /></div>
+      <div class="dash"><a (click)="onDashboardClick()">Dashboard Kit</a></div>
+    </div>
+    <button mat-button class="menu button">
+      <mat-icon class="space">pie_chart</mat-icon>
+      <span> <a routerLink="/home" routerLinkActive="active">Overview</a></span>
+    </button>
+    <button mat-button class="menu button">
+      <mat-icon class="space">confirmation_number</mat-icon>
+      <span
+        ><a
+          (click)="onTicketsClick()"
+          style="color: white; text-decoration: none"
+          routerLink="/tickets"
+          routerLinkActive="active"
+          >Tickets</a
+        ></span
+      >
+    </button>
+
+    <button mat-button class="menu button">
+      <mat-icon class="space">lightbulb</mat-icon>
+      <span>ideas</span>
+    </button>
+    <button mat-button class="menu button">
+      <mat-icon class="space">groups</mat-icon>
+      <span>contacts</span>
+    </button>
+    <button mat-button class="menu button">
+      <mat-icon class="space">person</mat-icon>
+      <span>agents</span>
+    </button>
+    <button mat-button class="menu button">
+      <mat-icon class="space">article</mat-icon>
+      <span>Articles</span>
+    </button>
+    <hr />
+    <button mat-button class="menu button">
+      <mat-icon class="space">settings</mat-icon>
+      <span>settings</span>
+    </button>
+    <button mat-button class="menu button">
+      <mat-icon class="space">circle_notifications</mat-icon>
+      <span>subscription</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="header row">
+      <div class="overview col-md-6">Overview</div>
+      <div class="overviewright col-md-6">
+        <div><mat-icon>search</mat-icon></div>
+        <div class="notifi"><mat-icon>notifications</mat-icon></div>
+        <div class="jones">Jones Ferdinand</div>
+        <div>
+          <img src="assets/man.png" alt="img not found" class="imgman" />
+        </div>
+      </div>
+    </div>
+    <div class="boxes row">
+      <div *ngFor="let detail of details" class="box col-md-3">
+        <div class="name">{{ detail.names }}</div>
+        <div class="num">{{ detail.nums }}</div>
+      </div>
+    </div>
+    <div class="graphBox row">
+      <div class="graph1 col-md-8">
+        <div class="today">Today's Trends</div>
+        <div class="date">
+          <div class="asof">as of 25 May 2019,9:41 PM</div>
+          <div class="day">--Today --yesterday</div>
+        </div>
+        <div class="graph">
+          <img src="assets/graph.svg" alt="img not found" class="graphImage" />
+        </div>
+      </div>
+      <div class="graph2 col-md-4">
+        <div class="letter">Resolved</div>
+        <div class="numbers">449</div>
+        <hr />
+        <div class="letter">Received</div>
+        <div class="numbers">426</div>
+        <hr />
+        <div class="letter">Average first response time</div>
+        <div class="numbers">33m</div>
+        <hr />
+        <div class="letter">Average response time</div>
+        <div class="numbers">3h 8m</div>
+        <hr />
+        <div class="letter">Resolution within SLA</div>
+        <div class="numbers">94%</div>
+      </div>
+    </div>
+    <div class="part row">
+      <div class="part1 col-md-6">
+        <div class="resolvedMain row">
+          <div class="resolved col-md-6">Unresolved tickets</div>
+          <div class="view col-md-6">View details</div>
+        </div>
+        <div class="group">Group: Support</div>
+        <div class="waiting row">
+          <div class="wait col-md-6">Waiting on Feature Request</div>
+          <div class="math col-md-6">4238</div>
+        </div>
+        <hr />
+        <div class="waiting row">
+          <div class="wait col-md-6">Awaiting Customer Response</div>
+          <div class="math col-md-6">1005</div>
+        </div>
+        <hr />
+        <div class="waiting row">
+          <div class="wait col-md-6">Awaiting Developer Fix</div>
+          <div class="math col-md-6">914</div>
+        </div>
+        <hr />
+        <div class="waiting row">
+          <div class="wait col-md-6">pending</div>
+          <div class="math col-md-6">281</div>
+        </div>
+      </div>
+      <div class="part2 col-md-6">
+        <div class="resolvedMain row">
+          <div class="resolved col-md-6">Tasks</div>
+          <div class="view col-md-6">View all</div>
+        </div>
+        <div class="group">Today</div>
+        <div class="waiting row">
+          <div class="wait font-color col-md-6">Create new task</div>
+          <div class="math font col-md-6">+</div>
+        </div>
+        <hr />
+        <div class="waiting row">
+          <div class="wait col-md-6">
+            <input type="radio" />
+            <label class="lab">Finish ticket update</label>
+          </div>
+          <div class="math col-md-6">
+            <button class="urgent">URGENT</button>
+          </div>
+        </div>
+        <hr />
+        <div class="waiting row">
+          <div class="wait col-md-6">
+            <input type="radio" />
+            <label class="lab">Create new ticket example</label>
+          </div>
+          <div class="math col-md-6"><button class="new">NEW</button></div>
+        </div>
+        <hr />
+        <div class="waiting row">
+          <div class="wait col-md-6">
+            <input type="radio" />
+            <label class="lab">Update ticket report</label>
+          </div>
+          <div class="math col-md-6">
+            <button class="default">DEFAULT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

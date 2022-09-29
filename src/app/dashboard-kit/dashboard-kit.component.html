@@ -1,0 +1,45 @@
+<div class="firstPage">
+  <div class="pagebox">
+    <div class="logo">
+      <img src="assets/logo.svg" alt="img not found" />
+    </div>
+    <div class="dash">Dashboard Kit</div>
+    <div class="login">Login in to Dashboard Kit</div>
+    <div class="enter">Enter your email and password below</div>
+    <form>
+      <div class="formData">
+        <div class="email">Email</div>
+
+        <input type="text" placeholder="Email address" />
+        <div class="passwordLine row">
+          <div class="pass col-md-6">Password</div>
+          <div class="for col-md-6">Forgott password?</div>
+        </div>
+        <div class="formInfo">
+          <input
+            [type]="changeType ? 'password' : 'text'"
+            placeholder="Password"
+            class="passwordText"
+          />
+          <span class="eyeicon" (click)="viewpass()"
+            ><mat-icon>{{
+              changeType ? "visibility_off" : "visibility"
+            }}</mat-icon></span
+          >
+          <!--<i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -30px; cursor: pointer; margin-top: 10px"
+          ></i>
+          <mat-icon class="icon">visibility_off</mat-icon>-->
+        </div>
+        <button class="btn btn-primary">Log In</button>
+        <div class="dont">
+          Don't have an account?<span style="color: #3751ff; padding-left: 5px"
+            >Sign up</span
+          >
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

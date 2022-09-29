@@ -1,0 +1,127 @@
+.mat-sidenav {
+  width: 200px;
+  border-right: none;
+  background: #363740;
+  color: white;
+  //border-radius: 10px;
+  padding: 16px;
+  text-align: left;
+}
+
+.content {
+  margin: 20px;
+  margin-left: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: lightgray;
+}
+
+.mat-sidenav-container {
+  height: calc(130vh - 65px);
+}
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+.logo {
+  padding-left: 7px;
+}
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.space {
+  margin-right: 15px;
+}
+.dash {
+  font-size: 16px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.mat-icon {
+  padding-right: 12px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.overviewright {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  padding-right: 40px;
+}
+.imgman {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  // margin-left: 20px;
+  //margin-right: 0px;
+}
+.notifi {
+  padding-left: 10px;
+}
+.jones {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.overview {
+  font-size: 20px;
+  padding-left: 40px;
+}
+.active {
+  background-color: grey;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 5px;
+}
+.dash {
+  font-size: 16px;
+  padding-left: 7px;
+  cursor: pointer;
+}
+.mat-column-symbol {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.mat-column-name {
+  font-style: italic;
+}
+.mat-column-weight {
+  text-decoration: underline;
+  color: blue;
+}
+.input[type] {
+  width: 100%;
+}
+.name {
+  text-align: left !important;
+  align-items: flex-start;
+  display: flex !important;
+  justify-content: left !important;
+  padding-top: 10px;
+}
+.formData {
+  width: 80%;
+  height: 30px;
+}
+.green {
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+}
